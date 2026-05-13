@@ -1578,6 +1578,26 @@ const CASES = [
     "O eixo eletrico costuma estar preservado ou desviado para a direita."
   ]
 },
+	{
+  id: 6,
+  date: "2026-05-13",
+  diagnosis: "Bloqueio de Ramo Esquerdo (BRE)",
+  imageUrl: "caso6.png",
+  description: "Paciente feminina, 72 anos, portadora de insuficiência cardíaca de etiologia chagásica e hipertensão arterial. Realiza ECG para ajuste de medicação.",
+  ecg: { 
+    hr: 68, 
+    qrsW: 1.4, // QRS bem largo, característica marcante do BRE
+    stMap: [0,0,0,0,0,0,0,0,0,0,0,0], 
+    tInv: [0, 5, 11] // Inversão de T em DI, aVL e V6 (derivadas laterais)
+  },
+  hints: [
+    "Observe a morfologia do complexo QRS nas precordiais esquerdas (V5 e V6) e laterais (DI e aVL).",
+    "Presenca de ondas R largas, monofasicas e com entalhes (padrao em torre ou topo em 'm').",
+    "Ausencia de ondas Q nas derivacoes DI, V5 e V6.",
+    "Complexos QRS com duracao superior a 120ms e desvio do eixo para a esquerda.",
+    "Presenca de ondas S profundas e alargadas nas precordiais direitas (V1 e V2)."
+  ]
+},
 ];
 
 /* ═══════════════════════════════════════════════
