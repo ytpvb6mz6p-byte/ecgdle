@@ -1598,6 +1598,28 @@ const CASES = [
     "Presenca de ondas S profundas e alargadas nas precordiais direitas (V1 e V2)."
   ]
 },
+	{
+  id: 7,
+  date: "2026-05-14",
+  diagnosis: "Taquicardia Sinusal",
+  imageUrl: "caso7.png",
+  description: "Paciente masculino, 24 anos, atleta, apresenta-se ao pronto-atendimento com quadro de febre, desidratação e mialgia intensa há 2 dias. Nega dor torácica ou palpitações prévias.",
+  ecg: { 
+    hr: 125, // Frequência alta para testar o novo cálculo de beatSpacing
+    qrsW: 0.9, 
+    notch: false, 
+    noP: false, 
+    stMap: [0,0,0,0,0,0,0,0,0,0,0,0], 
+    tInv: [] 
+  },
+  hints: [
+    "A frequencia cardiaca encontra-se acima de 100 bpm.",
+    "Presenca de onda P precedendo cada complexo QRS, com morfologia normal.",
+    "O intervalo PR e constante e dentro dos limites da normalidade.",
+    "O ritmo e regular, sugerindo uma resposta fisiológica a um estimulo extracardiaco.",
+    "Considere causas secundarias como febre, dor, exercicio, anemia ou desidratacao."
+  ]
+}
 ];
 
 /* ═══════════════════════════════════════════════
